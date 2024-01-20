@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+
+:root {
+  --card-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.05);
+  --royal-purple: #883ae1;
+  --lavender-mist: #e6d6fc;
+  --light-grey: #e5eaf0;
+  --white: #ffffff;
+  --midnight-navy: #20293a;
+  --slate-gray: #6c727f;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  margin: 0;
+}
+
+html {
+  color-scheme: dark light;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Sora', sans-serif;
+  display: grid;
+  place-items: center;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 16px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--white);
+  box-shadow: var(--card-shadow);
+  width: 23rem;
+  padding: 1em 1em 1.25em;
+  border-radius: 16px;
+}
+
+.badge {
+  display: inline-block;
+  background: var(--lavender-mist);
+  color: var(--royal-purple);
+  padding: 0.375em 1em;
+  border-radius: 16px;
+  margin-top: 1em;
+  font-size: 0.625rem;
+  font-weight: bold;
+}
+
+.title {
+  font-size: 1.125rem;
+  color: var(--midnight-navy);
+  margin-top: 1em;
+}
+
+.text {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--slate-gray);
+  margin-top: 0.375em;
+}
+
+.divider {
+  border-top: 2px solid var(--light-grey);
+  margin: 1.125em -1em;
+}
+
+.author {
+  font-size: 0.625rem;
+  margin-top: 1em;
+  color: var(--slate-gray);
+}
